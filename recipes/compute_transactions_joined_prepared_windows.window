@@ -543,6 +543,10 @@
         {
           "column": "purchase_date",
           "desc": false
+        },
+        {
+          "column": "transaction_id",
+          "desc": false
         }
       ],
       "limitPreceding": false,
