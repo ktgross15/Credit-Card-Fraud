@@ -39,11 +39,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1584724346194
+    "lastModifiedOn": 1584724346318
   },
   "creationTag": {
     "versionNumber": 0,
@@ -54,7 +54,6 @@
   },
   "tags": [],
   "params": {
-    "uploadBoxId": "e041355fd2991620e654b2f941760b02db4d62dc274b7cdbb7ba4a05cab77627",
     "uploadConnection": "Default (in DSS data dir.)",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
