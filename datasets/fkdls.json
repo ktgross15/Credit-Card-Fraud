@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1584710066810
+    "lastModifiedOn": 1584710170603
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,8 +58,101 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "transaction_id",
+        "type": "bigint"
+      },
+      {
+        "name": "fraudulent",
+        "type": "double"
+      },
+      {
+        "name": "purchase_date",
+        "type": "date"
+      },
+      {
+        "name": "purchase_year",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_month",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_dow",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_weekend",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_hour",
+        "type": "bigint"
+      },
+      {
+        "name": "merchant_category_id",
+        "type": "bigint"
+      },
+      {
+        "name": "item_category",
+        "type": "string"
+      },
+      {
+        "name": "purchase_amount",
+        "type": "double"
+      },
+      {
+        "name": "signature_provided",
+        "type": "bigint"
+      },
+      {
+        "name": "cardholder_first_active_month",
+        "type": "string"
+      },
+      {
+        "name": "days_active",
+        "type": "double"
+      },
+      {
+        "name": "cardholder_reward_program",
+        "type": "string"
+      },
+      {
+        "name": "cardholder_age",
+        "type": "double"
+      },
+      {
+        "name": "cardholder_fico_score",
+        "type": "double"
+      },
+      {
+        "name": "cardholder_fico_score_range",
+        "type": "string"
+      },
+      {
+        "name": "merchant_subsector",
+        "type": "string"
+      },
+      {
+        "name": "cardholder_metchant_distance",
+        "type": "double"
+      },
+      {
+        "name": "merchant_state",
+        "type": "string"
+      },
+      {
+        "name": "cardholder_state",
+        "type": "string"
+      },
+      {
+        "name": "new_col",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
