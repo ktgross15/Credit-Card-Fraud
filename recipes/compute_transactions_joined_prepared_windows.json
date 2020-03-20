@@ -14,8 +14,10 @@
           "ref": "transactions_joined_prepared",
           "deps": [
             {
+              "out": "transactions_windows",
               "idim": "purchase_date",
-              "func": "all_available",
+              "odim": "purchase_date",
+              "func": "equals",
               "params": {}
             }
           ]
@@ -34,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 42,
+    "versionNumber": 43,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1584720353305
+    "lastModifiedOn": 1584723304752
   },
   "creationTag": {
     "versionNumber": 0,
