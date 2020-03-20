@@ -527,7 +527,7 @@
       "first": false
     }
   ],
-  "engineType": "SPARK",
+  "engineType": "SQL",
   "windows": [
     {
       "windowUpperBound": -1,
