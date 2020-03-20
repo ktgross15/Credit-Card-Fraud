@@ -3,29 +3,29 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50
+      "share": 50.0
     }
   ],
+  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
-  "defaultOutputIndex": 1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
   "rangeSetTime": false,
-  "engineType": "SPARK",
+  "engineType": "SQL",
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50
+      "share": 50.0
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50
+      "share": 50.0
     }
   ],
   "computedColumns": [],
@@ -59,15 +59,22 @@
       "addDkuUdf": false,
       "executionEngine": "HIVESERVER2"
     },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
     "impala": {
       "forceStreamMode": true
     },
     "lowerCaseSchemaIfEngineRequiresIt": true,
     "sparkSQL": {
+      "skipPrerunValidate": false,
       "pipelineAllowMerge": true,
       "useGlobalMetastore": false,
       "pipelineAllowStart": true,
       "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
         "map": {}
       },
       "overwriteOutputSchema": false,
@@ -87,132 +94,10 @@
             {
               "input": "fraudulent",
               "col": "purchase_date",
-              "num": 0,
+              "num": 0.0,
               "operator": "not empty string"
             }
           ]
-        },
-        "$status": {
-          "schema": {
-            "columns": [
-              {
-                "name": "transaction_id",
-                "type": "bigint"
-              },
-              {
-                "name": "authorized_flag",
-                "type": "bigint"
-              },
-              {
-                "name": "fraudulent",
-                "type": "bigint"
-              },
-              {
-                "name": "purchase_date",
-                "type": "date"
-              },
-              {
-                "name": "purchase_year",
-                "type": "bigint"
-              },
-              {
-                "name": "purchase_month",
-                "type": "bigint"
-              },
-              {
-                "name": "purchase_dow",
-                "type": "bigint"
-              },
-              {
-                "name": "purchase_weekend",
-                "type": "bigint"
-              },
-              {
-                "name": "purchase_hour",
-                "type": "bigint"
-              },
-              {
-                "name": "merchant_category_id",
-                "type": "bigint"
-              },
-              {
-                "name": "item_category",
-                "type": "string"
-              },
-              {
-                "name": "purchase_amount",
-                "type": "double"
-              },
-              {
-                "name": "signature_provided",
-                "type": "bigint"
-              },
-              {
-                "name": "cardholder_first_active_month",
-                "type": "string"
-              },
-              {
-                "name": "days_active",
-                "type": "bigint"
-              },
-              {
-                "name": "cardholder_reward_program",
-                "type": "string"
-              },
-              {
-                "name": "cardholder_age",
-                "type": "double"
-              },
-              {
-                "name": "cardholder_fico_score",
-                "type": "double"
-              },
-              {
-                "name": "cardholder_fico_score_range",
-                "type": "string"
-              },
-              {
-                "name": "merchant_subsector",
-                "type": "string"
-              },
-              {
-                "name": "cardholder_metchant_distance",
-                "type": "double"
-              },
-              {
-                "name": "merchant_state",
-                "type": "string"
-              },
-              {
-                "name": "cardholder_state",
-                "type": "string"
-              },
-              {
-                "name": "new_col",
-                "type": "string"
-              },
-              {
-                "name": "cardholder_fraudulent_avg",
-                "type": "double"
-              },
-              {
-                "name": "cardholder_purchase_amount_sum",
-                "type": "double"
-              },
-              {
-                "name": "merchant_fraudulent_avg",
-                "type": "double"
-              },
-              {
-                "name": "merchant_purchase_amount_sum",
-                "type": "double"
-              }
-            ]
-          },
-          "validated": true,
-          "fullyTranslated": false,
-          "ok": false,
-          "message": "Filter expression is invalid"
         },
         "distinct": false,
         "enabled": true
