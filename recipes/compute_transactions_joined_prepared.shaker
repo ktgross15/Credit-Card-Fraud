@@ -281,6 +281,7 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
+  "columnWidthsByName": {},
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
