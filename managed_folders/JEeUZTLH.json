@@ -12,6 +12,20 @@
       "explicitFiles": []
     }
   },
+  "partitioning": {
+    "filePathPattern": ".*%Y_%M_%D.*",
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": [
+      {
+        "name": "date",
+        "params": {
+          "period": "DAY"
+        },
+        "type": "time"
+      }
+    ]
+  },
   "flowOptions": {
     "virtualizable": false,
     "rebuildBehavior": "NORMAL",
@@ -88,11 +102,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1584725211448
+    "lastModifiedOn": 1584725239778
   },
   "creationTag": {
     "versionNumber": 0,
