@@ -29,18 +29,18 @@
     "main": {
       "items": [
         {
-          "ref": "transactions_joined",
+          "ref": "transactions_joined1",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 27,
+    "versionNumber": 28,
     "lastModifiedBy": {
-      "login": "kgross"
+      "login": "ktgross15"
     },
-    "lastModifiedOn": 1573747403922
+    "lastModifiedOn": 1584722759697
   },
   "creationTag": {
     "versionNumber": 0,
