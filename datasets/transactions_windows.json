@@ -33,14 +33,22 @@
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
-    "dimensions": []
+    "dimensions": [
+      {
+        "name": "purchase_date",
+        "params": {
+          "period": "MONTH"
+        },
+        "type": "time"
+      }
+    ]
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
-      "login": "kgross"
+      "login": "ktgross15"
     },
-    "lastModifiedOn": 1584677641390
+    "lastModifiedOn": 1584723296469
   },
   "creationTag": {
     "versionNumber": 0,
@@ -255,6 +263,16 @@
         "configuration": {
           "aggregates": []
         }
+      },
+      {
+        "type": "partitioning",
+        "enabled": true,
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "meta": {
+          "name": "Partitioning statistics",
+          "level": 1
+        },
+        "configuration": {}
       }
     ],
     "engineConfig": {

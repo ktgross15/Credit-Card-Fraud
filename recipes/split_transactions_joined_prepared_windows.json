@@ -12,7 +12,13 @@
       "items": [
         {
           "ref": "transactions_windows",
-          "deps": []
+          "deps": [
+            {
+              "idim": "purchase_date",
+              "func": "all_available",
+              "params": {}
+            }
+          ]
         }
       ]
     }
@@ -32,11 +38,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 24,
+    "versionNumber": 25,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1584716950498
+    "lastModifiedOn": 1584723296474
   },
   "creationTag": {
     "versionNumber": 0,
