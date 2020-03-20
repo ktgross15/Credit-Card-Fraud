@@ -1,0 +1,23 @@
+{
+  "name": "fraud_krg_1",
+  "endpoints": [
+    {
+      "modelRef": "TgxqKBd4",
+      "useJava": true,
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "id": "api_end_kg_1",
+      "type": "STD_PREDICTION"
+    }
+  ],
+  "publicAccess": true,
+  "authRealm": {
+    "queryKeys": []
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

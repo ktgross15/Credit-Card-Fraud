@@ -1,0 +1,31 @@
+{
+  "type": "BOKEH",
+  "hasLegacyBackendURL": false,
+  "params": {
+    "autoStartBackend": false,
+    "envSelection": {
+      "envMode": "INHERIT"
+    }
+  },
+  "config": {},
+  "name": "gdgsf",
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "kgross"
+    },
+    "lastModifiedOn": 1571676376451
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "kgross"
+    },
+    "lastModifiedOn": 1571676373869
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "customFields": {}
+}

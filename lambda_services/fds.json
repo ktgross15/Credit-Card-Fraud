@@ -1,0 +1,64 @@
+{
+  "name": "fds",
+  "endpoints": [
+    {
+      "modelRef": "HGBezpDq",
+      "useJava": true,
+      "testQueries": [
+        {
+          "q": {
+            "features": {}
+          }
+        },
+        {
+          "name": "train_2017 #1",
+          "q": {
+            "features": {
+              "authorized_flag": 0,
+              "fraudulent": 1,
+              "purchase_date": "2017-10-14T20:01:00.000Z",
+              "purchase_date_month": 10,
+              "purchase_date_dow": 6,
+              "purchase_date_hour": 20,
+              "card_id": "C_ID_cefc14d8c5",
+              "merchant_id": "M_ID_00037f6a5d",
+              "merchant_category_id": 884,
+              "item_category": 4,
+              "purchase_amount": 18.35,
+              "signature_provided": 0,
+              "cardholder_first_active_month": "2016-11-01T00:00:00.000Z",
+              "days_active": 347,
+              "cardholder_reward_program": "travel",
+              "cardholder_latitude": 41.24100000000001,
+              "cardholder_longitude": -87.109,
+              "cardholder_age": 69.5,
+              "cardholder_fico_score": 505,
+              "merchant_subsector_description": "consumer electronics",
+              "merchant_latitude": 47.621,
+              "merchant_longitude": -116.221,
+              "merchant_location": "POINT(-116.221 47.621)",
+              "merchant_state": "Idaho",
+              "merchant_state_enName": "Idaho",
+              "cardholder_location": "POINT(-87.109 41.24100000000001)",
+              "cardholder_state": "Indiana",
+              "cardholder_state_enName": "Indiana"
+            }
+          }
+        }
+      ],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "id": "dsdsd",
+      "type": "STD_PREDICTION"
+    }
+  ],
+  "publicAccess": true,
+  "authRealm": {
+    "queryKeys": []
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

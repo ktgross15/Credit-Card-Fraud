@@ -1,0 +1,29 @@
+{
+  "type": "saved-model_report",
+  "params": {
+    "savedModelSmartId": "EDTgPYwP"
+  },
+  "owner": "kgross",
+  "listed": false,
+  "name": "Full report of model Prediction (RANDOM_FOREST_CLASSIFICATION) on seen",
+  "dashboardCreationId": "XYRqSdY",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "kgross"
+    },
+    "lastModifiedOn": 1581006982402
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "kgross"
+    },
+    "lastModifiedOn": 1581006982402
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

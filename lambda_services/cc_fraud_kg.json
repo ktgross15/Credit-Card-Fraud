@@ -1,0 +1,67 @@
+{
+  "name": "cc_fraud_kg",
+  "endpoints": [
+    {
+      "modelRef": "TgxqKBd4",
+      "useJava": true,
+      "testQueries": [
+        {
+          "name": "seen #1",
+          "q": {
+            "features": {
+              "transaction_id": 43782,
+              "authorized_flag": 1,
+              "fraudulent": 0,
+              "purchase_date": "2017-04-24 12:23:37",
+              "purchase_date_parsed": "2017-04-24T12:23:37.000Z",
+              "purchase_year": 2017,
+              "purchase_month": 4,
+              "purchase_day": 24,
+              "purchase_dow": 1,
+              "purchase_weekend": 0,
+              "purchase_hour": 12,
+              "card_id": "C_ID_5eaf60cb41",
+              "merchant_id": "M_ID_0002237144",
+              "merchant_category_id": 195,
+              "item_category": "B",
+              "purchase_amount": 26.37,
+              "signature_provided": 0,
+              "cardholder_first_active_month": "2016-02",
+              "cardholder_first_active_month_parsed": "2016-02-01T00:00:00.000Z",
+              "days_active": 448,
+              "cardholder_reward_program": "dining_entertainment",
+              "cardholder_latitude": 42.585,
+              "cardholder_longitude": -97.64700000000002,
+              "cardholder_age": 61,
+              "cardholder_fico_score": 540,
+              "merchant_subsector_description": "consumer electronics",
+              "merchant_latitude": 36.379,
+              "merchant_longitude": -92.815,
+              "merchant_location": "POINT(-92.815 36.379)",
+              "merchant_state": "Arkansas",
+              "merchant_state_enName": "Arkansas",
+              "cardholder_location": "POINT(-97.64700000000002 42.585)",
+              "cardholder_state": "Nebraska",
+              "cardholder_state_enName": "Nebraska",
+              "30_day_cardholder_fraudulent_avg": 0,
+              "30_day_cardholder_purchase_amount_sum": 332.61
+            }
+          }
+        }
+      ],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "id": "cc_fraud_preds",
+      "type": "STD_PREDICTION"
+    }
+  ],
+  "publicAccess": true,
+  "authRealm": {
+    "queryKeys": []
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "test_python",
+  "endpoints": [
+    {
+      "modelType": "REGRESSION",
+      "envSelection": {
+        "envMode": "INHERIT"
+      },
+      "code": "\nfrom  dataiku.apinode.predict.predictor import RegressionPredictor\nimport pandas as pd\nclass MyPredictor(RegressionPredictor):\n    \"\"\"The class for a regression Custom API node predictor\"\"\"\n\n    def __init__(self, data_folder \u003d None):\n        \"\"\"data_folder is the absolute path to the managed folder storing the data for the model\n        (if any)\"\"\"\n        self.data_folder \u003d data_folder\n\n    def predict(self, features_df):\n        \"\"\"\n        The main prediction method.\n\n        :param: df: a dataframe of 1 or several records to predict\n\n        :return: Either:\n            ``prediction_series`` or\n            ``(prediction_series, custom_keys_list)``\n\n        prediction_series must be a Pandas Series of decisions\n\n        custom_keys_list is optional and must contain one entry per input row. Each entry of\n        custom_keys_list must be a Python dictionary. These custom keys will be sent in the\n        output result\n\n        prediction_series and custom_keys_list must have the same number of rows than df.\n        \"\"\"\n\n        # Note: this sample uses the first form: precision_series\n\n        # Note: this sample \"cheats\" and always returns 4 predictions.\n        # You should actually return 1 prediction per row in the features_df\n\n        print \"Features DataFrame %s\" % features_df\n\n        # predictions, one per features_df row\n        return pd.Series([.4, 17.2, 21, 9.3])\n",
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "id": "abc",
+      "type": "CUSTOM_PREDICTION"
+    }
+  ],
+  "publicAccess": true,
+  "authRealm": {
+    "queryKeys": []
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

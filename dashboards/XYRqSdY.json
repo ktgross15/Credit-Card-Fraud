@@ -1,0 +1,55 @@
+{
+  "pages": [
+    {
+      "id": "PvzZeZH",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 5,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "summary"
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "h2iVHLW",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
+      },
+      "title": "Credit Card Fraud Patterns",
+      "showTitle": true
+    }
+  ],
+  "owner": "kgross",
+  "listed": true,
+  "name": "Credit Card Fraud KRG\u0027s default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 18,
+    "lastModifiedBy": {
+      "login": "kgross"
+    },
+    "lastModifiedOn": 1581007044348
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "kgross"
+    },
+    "lastModifiedOn": 1565918605425
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

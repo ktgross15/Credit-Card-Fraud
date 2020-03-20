@@ -1,0 +1,291 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "mainColor": "#ff9c00",
+      "name": "Date Formatting",
+      "metaType": "GROUP",
+      "disabled": false,
+      "comment": "Parse dates, compute days active, extract date components from purchase date, and create purchase weekend",
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateParser",
+          "params": {
+            "outCol": "",
+            "formats": [
+              "yyyy-MM"
+            ],
+            "columns": [
+              "cardholder_first_active_month"
+            ],
+            "timezone_id": "UTC",
+            "appliesTo": "SINGLE_COLUMN",
+            "lang": "auto"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateParser",
+          "params": {
+            "outCol": "",
+            "formats": [
+              "yyyy-MM-dd HH:mm:ss"
+            ],
+            "columns": [
+              "purchase_date"
+            ],
+            "timezone_id": "UTC",
+            "appliesTo": "SINGLE_COLUMN",
+            "lang": "auto"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateDifference",
+          "params": {
+            "output": "days_active",
+            "input2": "purchase_date",
+            "outputUnit": "DAYS",
+            "input1": "cardholder_first_active_month",
+            "compareTo": "COLUMN",
+            "reverse": false
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateComponentsExtractor",
+          "params": {
+            "outMonthColumn": "purchase_month",
+            "outHourColumn": "purchase_hour",
+            "outYearColumn": "purchase_year",
+            "column": "purchase_date",
+            "outDayOfWeekColumn": "purchase_dow",
+            "timezone_id": "UTC",
+            "outDayColumn": ""
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "if(purchase_dow\u003e5,1,0)",
+            "column": "purchase_weekend"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": true,
+      "secondaryColor": "#f4e0c1"
+    },
+    {
+      "preview": false,
+      "name": "Geopoint Cleaning",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "GeoPointCreator",
+          "params": {
+            "out_column": "merchant_location",
+            "lat_column": "merchant_latitude",
+            "lon_column": "merchant_longitude"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "GeoPointCreator",
+          "params": {
+            "out_column": "cardholder_location",
+            "lat_column": "cardholder_latitude",
+            "lon_column": "cardholder_longitude"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CityLevelReverseGeocoder",
+          "params": {
+            "l4OutCol": "merchant_state",
+            "inputCol": "merchant_location"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CityLevelReverseGeocoder",
+          "params": {
+            "l4OutCol": "cardholder_state",
+            "inputCol": "cardholder_location"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "GeoDistanceProcessor",
+          "params": {
+            "output": "cardholder_metchant_distance",
+            "input2": "merchant_location",
+            "outputUnit": "KILOMETERS",
+            "input1": "cardholder_location",
+            "compareTo": "COLUMN"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "MinMaxProcessor",
+      "params": {
+        "upperBound": "1000",
+        "columns": [
+          "purchase_amount"
+        ],
+        "clear": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "cardholder_age"
+        ],
+        "values": [
+          "999"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "CLEAR_CELL",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "cardholder_age"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "57"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "card_id",
+          "merchant_id",
+          "cardholder_latitude",
+          "cardholder_longitude",
+          "merchant_latitude",
+          "merchant_longitude",
+          "merchant_location",
+          "merchant_state_enName",
+          "cardholder_location",
+          "cardholder_state_enName"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "\u0027yo\u0027",
+        "column": "new_col"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

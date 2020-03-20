@@ -1,0 +1,733 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "ntileValues": "10",
+  "keys": [],
+  "values": [
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "transaction_id",
+      "count": false,
+      "$idx": 0,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "authorized_flag",
+      "count": false,
+      "$idx": 1,
+      "lagValues": "1",
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "lead": false,
+      "concatDistinct": false,
+      "dateDiffUnit": "DAY",
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "lag": false,
+      "leadValues": "1",
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "fraudulent",
+      "count": false,
+      "$idx": 2,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "lead": false,
+      "min": false,
+      "avg": true,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "purchase_date",
+      "count": false,
+      "$idx": 3,
+      "lagValues": "1",
+      "sum": false,
+      "concat": false,
+      "type": "date",
+      "lead": false,
+      "concatDistinct": false,
+      "dateDiffUnit": "DAY",
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "lag": false,
+      "leadValues": "1",
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "purchase_year",
+      "count": false,
+      "$idx": 4,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "purchase_month",
+      "count": false,
+      "$idx": 5,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "purchase_dow",
+      "count": false,
+      "$idx": 6,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "purchase_weekend",
+      "count": false,
+      "$idx": 7,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "purchase_hour",
+      "count": false,
+      "$idx": 8,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "merchant_category_id",
+      "count": false,
+      "$idx": 9,
+      "lagValues": "1",
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "lead": false,
+      "concatDistinct": false,
+      "dateDiffUnit": "DAY",
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "lag": false,
+      "leadValues": "1",
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "item_category",
+      "count": false,
+      "$idx": 10,
+      "lagValues": "1",
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "lead": false,
+      "concatDistinct": false,
+      "dateDiffUnit": "DAY",
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "lag": false,
+      "leadValues": "1",
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "purchase_amount",
+      "count": false,
+      "$idx": 11,
+      "lagValues": "1",
+      "sum": true,
+      "concat": false,
+      "type": "double",
+      "lead": false,
+      "concatDistinct": false,
+      "dateDiffUnit": "DAY",
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "lag": false,
+      "leadValues": "1",
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "signature_provided",
+      "count": false,
+      "$idx": 12,
+      "lagValues": "1",
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "lead": false,
+      "concatDistinct": false,
+      "dateDiffUnit": "DAY",
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "lag": false,
+      "leadValues": "1",
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "cardholder_first_active_month",
+      "count": false,
+      "$idx": 13,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "days_active",
+      "count": false,
+      "$idx": 14,
+      "lagValues": "1",
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "lead": false,
+      "concatDistinct": false,
+      "dateDiffUnit": "DAY",
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "lag": false,
+      "leadValues": "1",
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "cardholder_reward_program",
+      "count": false,
+      "$idx": 15,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "cardholder_age",
+      "count": false,
+      "$idx": 16,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "cardholder_fico_score",
+      "count": false,
+      "$idx": 17,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "cardholder_fico_score_range",
+      "count": false,
+      "$idx": 18,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "merchant_subsector",
+      "count": false,
+      "$idx": 19,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "cardholder_metchant_distance",
+      "count": false,
+      "$idx": 20,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "merchant_state",
+      "count": false,
+      "$idx": 21,
+      "lagValues": "1",
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "lead": false,
+      "concatDistinct": false,
+      "dateDiffUnit": "DAY",
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "lag": false,
+      "leadValues": "1",
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "cardholder_state",
+      "count": false,
+      "$idx": 22,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "new_col",
+      "count": false,
+      "$idx": 23,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    }
+  ],
+  "engineType": "SPARK",
+  "windows": [
+    {
+      "windowUpperBound": -1,
+      "enablePartitioning": true,
+      "prefix": "cardholder",
+      "enableOrdering": true,
+      "limitFollowing": true,
+      "followingRows": -1,
+      "partitioningColumns": [],
+      "windowLimitMode": "ROWS",
+      "windowDateRangeUnit": "DAY",
+      "orders": [
+        {
+          "column": "purchase_date",
+          "desc": false
+        }
+      ],
+      "limitPreceding": false,
+      "windowLowerBound": 30,
+      "enableLimits": true
+    },
+    {
+      "windowLimitMode": "ROWS",
+      "enablePartitioning": true,
+      "prefix": "merchant",
+      "enableOrdering": true,
+      "precedingRows": 30,
+      "limitFollowing": true,
+      "orders": [
+        {
+          "column": "purchase_date",
+          "desc": false
+        }
+      ],
+      "limitPreceding": false,
+      "followingRows": -1,
+      "enableLimits": true,
+      "partitioningColumns": []
+    }
+  ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "transaction_id",
+            "type": "bigint"
+          },
+          {
+            "name": "authorized_flag",
+            "type": "bigint"
+          },
+          {
+            "name": "fraudulent",
+            "type": "bigint"
+          },
+          {
+            "name": "purchase_date",
+            "type": "date"
+          },
+          {
+            "name": "purchase_year",
+            "type": "bigint"
+          },
+          {
+            "name": "purchase_month",
+            "type": "bigint"
+          },
+          {
+            "name": "purchase_dow",
+            "type": "bigint"
+          },
+          {
+            "name": "purchase_weekend",
+            "type": "bigint"
+          },
+          {
+            "name": "purchase_hour",
+            "type": "bigint"
+          },
+          {
+            "name": "merchant_category_id",
+            "type": "bigint"
+          },
+          {
+            "name": "item_category",
+            "type": "string"
+          },
+          {
+            "name": "purchase_amount",
+            "type": "double"
+          },
+          {
+            "name": "signature_provided",
+            "type": "bigint"
+          },
+          {
+            "name": "cardholder_first_active_month",
+            "type": "string"
+          },
+          {
+            "name": "days_active",
+            "type": "bigint"
+          },
+          {
+            "name": "cardholder_reward_program",
+            "type": "string"
+          },
+          {
+            "name": "cardholder_age",
+            "type": "double"
+          },
+          {
+            "name": "cardholder_fico_score",
+            "type": "double"
+          },
+          {
+            "name": "cardholder_fico_score_range",
+            "type": "string"
+          },
+          {
+            "name": "merchant_subsector",
+            "type": "string"
+          },
+          {
+            "name": "cardholder_metchant_distance",
+            "type": "double"
+          },
+          {
+            "name": "merchant_state",
+            "type": "string"
+          },
+          {
+            "name": "cardholder_state",
+            "type": "string"
+          },
+          {
+            "name": "new_col",
+            "type": "string"
+          },
+          {
+            "name": "cardholder_fraudulent_avg",
+            "type": "double"
+          },
+          {
+            "name": "cardholder_purchase_amount_sum",
+            "type": "double"
+          },
+          {
+            "name": "merchant_fraudulent_avg",
+            "type": "double"
+          },
+          {
+            "name": "merchant_purchase_amount_sum",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "cumeDist": false,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {
+          "transactions_joined_prepared": {
+            "cache": false,
+            "repartition": 1
+          }
+        }
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "ntile": false,
+  "rank": false,
+  "denseRank": false,
+  "rowNumber": false,
+  "outputColumnNameOverrides": {}
+}

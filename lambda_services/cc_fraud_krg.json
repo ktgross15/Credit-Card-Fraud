@@ -1,0 +1,58 @@
+{
+  "name": "cc_fraud_krg",
+  "endpoints": [
+    {
+      "modelRef": "TgxqKBd4",
+      "useJava": true,
+      "testQueries": [
+        {
+          "name": "unseen #1",
+          "q": {
+            "features": {
+              "transaction_id": 2347,
+              "purchase_date": "2018-01-14T16:08:42.000Z",
+              "purchase_year": 2018,
+              "purchase_month": 1,
+              "purchase_dow": 7,
+              "purchase_weekend": 1,
+              "purchase_hour": 16,
+              "card_id": "c_id_caeea94241",
+              "merchant_id": "M_ID_0003f9a7c4",
+              "merchant_category_id": 705,
+              "item_category": "D",
+              "purchase_amount": 181.96,
+              "signature_provided": 0,
+              "cardholder_first_active_month": "2017-11-01T00:00:00.000Z",
+              "days_active": 74,
+              "cardholder_reward_program": "dining_entertainment",
+              "cardholder_latitude": 30.163,
+              "cardholder_longitude": -85.13099999999999,
+              "cardholder_age": 59,
+              "cardholder_fico_score": 671,
+              "cardholder_location": "POINT(-85.13099999999999 30.163)",
+              "cardholder_state": "Florida",
+              "cardholder_state_enName": "Florida",
+              "cardholder_fraudulent_avg": 0.25,
+              "cardholder_purchase_amount_sum": 1598.4500000000003,
+              "merchant_fraudulent_avg": 0.1111111111111111,
+              "merchant_purchase_amount_sum": 484.86999999999995
+            }
+          }
+        }
+      ],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "id": "fraud_prediction",
+      "type": "STD_PREDICTION"
+    }
+  ],
+  "publicAccess": true,
+  "authRealm": {
+    "queryKeys": []
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
