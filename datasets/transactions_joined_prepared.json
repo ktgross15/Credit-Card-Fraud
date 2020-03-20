@@ -37,18 +37,18 @@
       {
         "name": "purchase_date",
         "params": {
-          "period": "DAY"
+          "period": "MONTH"
         },
         "type": "time"
       }
     ]
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1584720299930
+    "lastModifiedOn": 1584723269024
   },
   "creationTag": {
     "versionNumber": 0,
