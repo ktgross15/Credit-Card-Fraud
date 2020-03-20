@@ -11,15 +11,15 @@
     "main": {
       "items": [
         {
-          "ref": "transactions",
-          "deps": []
-        },
-        {
           "ref": "cardholder_info_prepared",
           "deps": []
         },
         {
           "ref": "merchant_info_prepared",
+          "deps": []
+        },
+        {
+          "ref": "transactions_filtered",
           "deps": []
         }
       ]
@@ -36,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1584722759697
+    "lastModifiedOn": 1584722868995
   },
   "creationTag": {
     "versionNumber": 0,

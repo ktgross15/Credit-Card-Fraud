@@ -190,15 +190,15 @@
   },
   "virtualInputs": [
     {
-      "index": 0
+      "index": 2
     },
     {
       "prefix": "cardholder",
-      "index": 1
+      "index": 0
     },
     {
       "prefix": "merchant",
-      "index": 2
+      "index": 1
     }
   ],
   "computedColumns": [],
