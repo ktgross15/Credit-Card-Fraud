@@ -1,20 +1,24 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Read recipe inputs
 transactions_joined_prepared = dataiku.Dataset("transactions_joined_prepared")
-transactions_joined_prepared_df = transactions_joined_prepared.get_dataframe()
+df = transactions_joined_prepared.get_dataframe()
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df.head()
 
-# Compute recipe outputs from inputs
-# TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
-# NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df_new = df.drop('authorized_flag', axis=1)
 
-fkdls_df = transactions_joined_prepared_df # For this sample code, simply copy input to output
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+df_new.head()
 
-
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 fkdls = dataiku.Dataset("fkdls")
-fkdls.write_with_schema(fkdls_df)
+fkdls.write_with_schema(df_new)
