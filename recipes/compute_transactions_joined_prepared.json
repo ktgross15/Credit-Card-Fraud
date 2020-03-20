@@ -60,7 +60,15 @@
       "items": [
         {
           "ref": "transactions_joined1",
-          "deps": []
+          "deps": [
+            {
+              "out": "transactions_joined_prepared",
+              "idim": "purchase_date",
+              "odim": "purchase_date",
+              "func": "equals",
+              "params": {}
+            }
+          ]
         }
       ]
     }
@@ -76,11 +84,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 56,
+    "versionNumber": 57,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1584722918735
+    "lastModifiedOn": 1584723255695
   },
   "creationTag": {
     "versionNumber": 0,
