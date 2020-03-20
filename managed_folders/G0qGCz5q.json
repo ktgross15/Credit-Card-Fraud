@@ -13,12 +13,12 @@
     }
   },
   "partitioning": {
-    "filePathPattern": "/%Y/%M/.*",
+    "filePathPattern": ".*%Y_%M_%D.*",
     "ignoreNonMatchingFile": true,
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": [
       {
-        "name": "purchase_date",
+        "name": "Date",
         "params": {
           "period": "MONTH"
         },
@@ -102,11 +102,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1584723551253
+    "lastModifiedOn": 1584723632190
   },
   "creationTag": {
     "versionNumber": 0,
