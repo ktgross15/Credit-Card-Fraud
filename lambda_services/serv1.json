@@ -1,9 +1,46 @@
 {
+  "name": "serv1",
   "endpoints": [
     {
       "modelRef": "EDTgPYwP",
       "useJava": true,
-      "testQueries": [],
+      "testQueries": [
+        {
+          "name": "test #1",
+          "q": {
+            "features": {
+              "transaction_id": 41960,
+              "authorized_flag": 1,
+              "fraudulent": 0,
+              "purchase_date": "2017-01-01T01:26:59.000Z",
+              "purchase_year": 2017,
+              "purchase_month": 1,
+              "purchase_dow": 7,
+              "purchase_weekend": 1,
+              "purchase_hour": 1,
+              "merchant_category_id": 661,
+              "item_category": "C",
+              "purchase_amount": 477.33,
+              "signature_provided": 0,
+              "cardholder_first_active_month": "2015-10-01T00:00:00.000Z",
+              "days_active": 458,
+              "cardholder_reward_program": "travel",
+              "cardholder_age": 67,
+              "cardholder_fico_score": 576,
+              "cardholder_fico_score_range": "550-650",
+              "merchant_subsector": "consumer electronics",
+              "cardholder_metchant_distance": 2243.97,
+              "merchant_state": "Mississippi",
+              "cardholder_state": "Montana",
+              "new_col": "yo",
+              "cardholder_fraudulent_avg": 0,
+              "cardholder_purchase_amount_sum": 387.04999999999995,
+              "merchant_fraudulent_avg": 0,
+              "merchant_purchase_amount_sum": 387.04999999999995
+            }
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "id": "end1",
