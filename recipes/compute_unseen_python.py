@@ -11,4 +11,4 @@ df['new'] = 'new stuff yay'
 
 # Write recipe outputs
 unseen_python = dataiku.Dataset("unseen_python")
-unseen_python.write_with_schema(unseen_python_df)
+unseen_python.write_with_schema(df)
