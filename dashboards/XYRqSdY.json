@@ -7,29 +7,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
+              "top": 2,
               "left": 0,
-              "width": 5,
-              "height": 3
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "displayMode": "summary"
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "h2iVHLW",
-            "insightType": "saved-model_report",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": -1,
-              "left": -1,
-              "width": 10,
-              "height": 5
+              "width": 11,
+              "height": 6
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {},
@@ -51,11 +32,11 @@
   "name": "Credit Card Fraud KRG\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 23,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587407089223
+    "lastModifiedOn": 1587407126615
   },
   "creationTag": {
     "versionNumber": 0,
