@@ -25,22 +25,14 @@
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
-    "dimensions": [
-      {
-        "name": "purchase_date",
-        "params": {
-          "period": "MONTH"
-        },
-        "type": "time"
-      }
-    ]
+    "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1584723255686
+    "lastModifiedOn": 1587403451953
   },
   "creationTag": {
     "versionNumber": 0,
