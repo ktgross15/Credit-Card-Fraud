@@ -566,17 +566,130 @@
           "type": "CONTINUOUS"
         },
         "id": "AWLsrFj"
+      },
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0
+        },
+        "metric": "SPEARMAN",
+        "columns": [
+          {
+            "name": "purchase_year",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "purchase_dow",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "purchase_amount",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "days_active",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "cardholder_age",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "cardholder_fico_score",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "cardholder_metchant_distance",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "VxeYznT"
+      },
+      {
+        "type": "pca",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0
+        },
+        "columns": [
+          {
+            "name": "purchase_year",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "purchase_month",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "purchase_dow",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "purchase_weekend",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "purchase_hour",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "purchase_amount",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "signature_provided",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "days_active",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "cardholder_age",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "cardholder_fico_score",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "cardholder_metchant_distance",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "cardholder_fraudulent_avg",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "cardholder_purchase_amount_sum",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "merchant_fraudulent_avg",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "merchant_purchase_amount_sum",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "d6wluJe"
       }
     ],
     "id": "IdpGgA6"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587406871388
+    "lastModifiedOn": 1587406987034
   },
   "creationTag": {
     "versionNumber": 0,
