@@ -232,6 +232,8 @@
       "type": "ColumnsSelector",
       "params": {
         "columns": [
+          "cardholder_fico_score_range",
+          "authorized_flag",
           "card_id",
           "merchant_id",
           "cardholder_latitude",
