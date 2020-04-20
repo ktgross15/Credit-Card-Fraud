@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 30,
+    "versionNumber": 31,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587403462526
+    "lastModifiedOn": 1587404925695
   },
   "creationTag": {
     "versionNumber": 0,
@@ -156,10 +156,6 @@
       },
       {
         "name": "cardholder_state",
-        "type": "string"
-      },
-      {
-        "name": "new_col",
         "type": "string"
       }
     ],
