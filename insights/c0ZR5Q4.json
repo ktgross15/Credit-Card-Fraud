@@ -1,0 +1,126 @@
+{
+  "type": "eda",
+  "params": {
+    "card": {
+      "type": "pca",
+      "heatmapParams": {
+        "showValues": true,
+        "showColors": true,
+        "showAbsValues": false,
+        "threshold": 0.0
+      },
+      "columns": [
+        {
+          "name": "purchase_year",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "purchase_month",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "purchase_dow",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "purchase_weekend",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "purchase_hour",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "purchase_amount",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "signature_provided",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "days_active",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "cardholder_age",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "cardholder_fico_score",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "cardholder_metchant_distance",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "cardholder_fraudulent_avg",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "cardholder_purchase_amount_sum",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "merchant_fraudulent_avg",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "merchant_purchase_amount_sum",
+          "type": "CONTINUOUS"
+        }
+      ],
+      "id": "d6wluJe"
+    },
+    "dataSpec": {
+      "inputDatasetSmartName": "transactions_windows",
+      "datasetSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": true,
+      "refreshTrigger": 0,
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      }
+    }
+  },
+  "owner": "ktgross15",
+  "listed": true,
+  "name": "PCA on 15 variables ",
+  "dashboardCreationId": "XYRqSdY",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1587407087792
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1587407087792
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
