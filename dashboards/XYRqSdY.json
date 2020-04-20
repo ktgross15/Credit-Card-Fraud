@@ -51,11 +51,11 @@
   "name": "Credit Card Fraud KRG\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587407087836
+    "lastModifiedOn": 1587407089223
   },
   "creationTag": {
     "versionNumber": 0,
