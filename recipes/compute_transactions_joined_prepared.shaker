@@ -229,20 +229,6 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "FillEmptyWithValue",
-      "params": {
-        "columns": [
-          "cardholder_age"
-        ],
-        "appliesTo": "SINGLE_COLUMN",
-        "value": "57"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
       "type": "ColumnsSelector",
       "params": {
         "columns": [
@@ -259,17 +245,6 @@
         ],
         "keep": false,
         "appliesTo": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": true,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "\u0027yo\u0027",
-        "column": "new_col"
       },
       "alwaysShowComment": false
     }
