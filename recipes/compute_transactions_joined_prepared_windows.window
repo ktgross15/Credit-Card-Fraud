@@ -505,26 +505,6 @@
       "value": true,
       "leadDiff": false,
       "first": false
-    },
-    {
-      "last": false,
-      "lagDiff": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "new_col",
-      "count": false,
-      "$idx": 23,
-      "sum": false,
-      "concat": false,
-      "type": "string",
-      "lead": false,
-      "min": false,
-      "avg": false,
-      "lag": false,
-      "stddev": false,
-      "value": true,
-      "leadDiff": false,
-      "first": false
     }
   ],
   "engineType": "SQL",
@@ -667,10 +647,6 @@
           },
           {
             "name": "cardholder_state",
-            "type": "string"
-          },
-          {
-            "name": "new_col",
             "type": "string"
           },
           {
