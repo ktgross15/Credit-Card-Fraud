@@ -34,156 +34,20 @@
         "type": "univariate_header",
         "showHistogram": true,
         "showQuantile": true,
-        "showFrequencyTable": false,
+        "showFrequencyTable": true,
         "showSummary": true,
         "showBoxPlot": true,
         "xColumns": [
           {
-            "name": "purchase_weekend",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "days_active",
-            "type": "CONTINUOUS"
-          },
-          {
             "name": "cardholder_age",
             "type": "CONTINUOUS"
+          },
+          {
+            "name": "item_category",
+            "type": "CATEGORICAL"
           }
         ],
         "cards": [
-          {
-            "type": "column_card",
-            "column": {
-              "name": "purchase_weekend",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "binningMode": "AUTO",
-                "nbBins": 25,
-                "customBinningBoundaries": [],
-                "column": {
-                  "name": "purchase_weekend",
-                  "type": "CONTINUOUS"
-                },
-                "id": "O02Ggt8"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "totalCount": true,
-                  "mean": true,
-                  "sum": false,
-                  "median": true,
-                  "std": true,
-                  "variance": false,
-                  "skewness": false,
-                  "kurtosis": false,
-                  "sem": false,
-                  "completeCount": true,
-                  "nbEmpty": true,
-                  "zeroCount": false,
-                  "zeroRatio": false,
-                  "nonZeroRatio": false,
-                  "iqr": false,
-                  "distinctCount": true,
-                  "nbNonEmpty": false,
-                  "min": true,
-                  "max": true,
-                  "range": false,
-                  "mode": true
-                },
-                "column": {
-                  "name": "purchase_weekend",
-                  "type": "CONTINUOUS"
-                },
-                "id": "RbhGGAv"
-              },
-              {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "column": {
-                  "name": "purchase_weekend",
-                  "type": "CONTINUOUS"
-                },
-                "id": "wqrtxXA"
-              }
-            ],
-            "id": "RHrQqlt"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "days_active",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "binningMode": "AUTO",
-                "nbBins": 25,
-                "customBinningBoundaries": [],
-                "column": {
-                  "name": "days_active",
-                  "type": "CONTINUOUS"
-                },
-                "id": "KZraMTB"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "totalCount": true,
-                  "mean": true,
-                  "sum": false,
-                  "median": true,
-                  "std": true,
-                  "variance": false,
-                  "skewness": false,
-                  "kurtosis": false,
-                  "sem": false,
-                  "completeCount": true,
-                  "nbEmpty": true,
-                  "zeroCount": false,
-                  "zeroRatio": false,
-                  "nonZeroRatio": false,
-                  "iqr": false,
-                  "distinctCount": true,
-                  "nbNonEmpty": false,
-                  "min": true,
-                  "max": true,
-                  "range": false,
-                  "mode": true
-                },
-                "column": {
-                  "name": "days_active",
-                  "type": "CONTINUOUS"
-                },
-                "id": "TfjQ9XW"
-              },
-              {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "column": {
-                  "name": "days_active",
-                  "type": "CONTINUOUS"
-                },
-                "id": "dcRRGee"
-              }
-            ],
-            "id": "yYJOtla"
-          },
           {
             "type": "column_card",
             "column": {
@@ -249,6 +113,68 @@
               }
             ],
             "id": "HkFWJWO"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "item_category",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "item_category",
+                  "type": "CATEGORICAL"
+                },
+                "id": "RAnAPVz"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "item_category",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Ow2ZyxY"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "item_category",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Ci9jrJs"
+              }
+            ],
+            "id": "znjKK6x"
           }
         ],
         "id": "3mJRAfr"
@@ -685,11 +611,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587407080072
+    "lastModifiedOn": 1587408338727
   },
   "creationTag": {
     "versionNumber": 0,
