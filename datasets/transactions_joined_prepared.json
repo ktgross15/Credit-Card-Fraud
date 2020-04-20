@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587404925695
+    "lastModifiedOn": 1587407810615
   },
   "creationTag": {
     "versionNumber": 0,
@@ -71,10 +71,6 @@
         "type": "bigint"
       },
       {
-        "name": "authorized_flag",
-        "type": "bigint"
-      },
-      {
         "name": "fraudulent",
         "type": "bigint"
       },
@@ -96,7 +92,7 @@
       },
       {
         "name": "purchase_weekend",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "purchase_hour",
@@ -104,7 +100,7 @@
       },
       {
         "name": "merchant_category_id",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "item_category",
@@ -137,10 +133,6 @@
       {
         "name": "cardholder_fico_score",
         "type": "double"
-      },
-      {
-        "name": "cardholder_fico_score_range",
-        "type": "string"
       },
       {
         "name": "merchant_subsector",
