@@ -5,11 +5,11 @@
   "name": "Rebuild and retrain",
   "active": false,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
-      "login": "kgross"
+      "login": "ktgross15"
     },
-    "lastModifiedOn": 1572993295363
+    "lastModifiedOn": 1587405242976
   },
   "checklists": {
     "checklists": []
@@ -71,14 +71,10 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
-          "builds": [
-            {
-              "type": "DATASET",
-              "itemId": "seen",
-              "partitionsSpec": ""
-            }
-          ],
+          "builds": [],
           "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
@@ -95,6 +91,8 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "computes": [
             {
@@ -117,6 +115,8 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "checks": [
             {
@@ -140,6 +140,8 @@
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "builds": [],
           "jobType": "NON_RECURSIVE_FORCED_BUILD",
