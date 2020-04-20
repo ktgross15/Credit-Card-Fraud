@@ -252,17 +252,161 @@
           }
         ],
         "id": "3mJRAfr"
+      },
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "purchase_amount",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": true,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "cardholder_age",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "cardholder_age",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "cardholder_age",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "purchase_amount",
+                  "type": "CONTINUOUS"
+                },
+                "id": "3C4uGEF"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "cardholder_age",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "purchase_amount",
+                  "type": "CONTINUOUS"
+                },
+                "id": "LUIfJB0"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "cardholder_age",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "purchase_amount",
+                  "type": "CONTINUOUS"
+                },
+                "id": "oywy3Oh"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "cardholder_age",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "purchase_amount",
+                  "type": "CONTINUOUS"
+                },
+                "id": "NIh1B9m"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "cardholder_age",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "purchase_amount",
+                  "type": "CONTINUOUS"
+                },
+                "id": "QjcqAeP"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "cardholder_age",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "purchase_amount",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ylrStX2"
+              }
+            ],
+            "id": "HO5adnQ"
+          }
+        ],
+        "id": "ddcN2Y3"
       }
     ],
     "id": "IdpGgA6"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587406245828
+    "lastModifiedOn": 1587406576031
   },
   "creationTag": {
     "versionNumber": 0,
