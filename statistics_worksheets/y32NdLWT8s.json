@@ -195,10 +195,6 @@
           {
             "name": "cardholder_age",
             "type": "CONTINUOUS"
-          },
-          {
-            "name": "item_category",
-            "type": "CATEGORICAL"
           }
         ],
         "cards": [
@@ -323,115 +319,6 @@
               }
             ],
             "id": "HO5adnQ"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "item_category",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "bivariate_box_plot",
-                "maxValues": 5,
-                "groupOthers": true,
-                "binningMode": "AUTO",
-                "customBinningBoundaries": [],
-                "xColumn": {
-                  "name": "item_category",
-                  "type": "CATEGORICAL"
-                },
-                "yColumn": {
-                  "name": "fraudulent",
-                  "type": "CONTINUOUS"
-                },
-                "id": "qQNIN5s"
-              },
-              {
-                "type": "bivariate_histogram",
-                "xBinningMode": "AUTO",
-                "yBinningMode": "AUTO",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthersX": true,
-                "groupWithOthersY": true,
-                "xCustomBinningBoundaries": [],
-                "yCustomBinningBoundaries": [],
-                "xColumn": {
-                  "name": "item_category",
-                  "type": "CATEGORICAL"
-                },
-                "yColumn": {
-                  "name": "fraudulent",
-                  "type": "CONTINUOUS"
-                },
-                "id": "Jr1KHBj"
-              },
-              {
-                "type": "mosaic_plot",
-                "xBinningMode": "AUTO",
-                "yBinningMode": "AUTO",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthersX": true,
-                "groupWithOthersY": true,
-                "xCustomBinningBoundaries": [],
-                "yCustomBinningBoundaries": [],
-                "xColumn": {
-                  "name": "item_category",
-                  "type": "CATEGORICAL"
-                },
-                "yColumn": {
-                  "name": "fraudulent",
-                  "type": "CONTINUOUS"
-                },
-                "id": "DfcoBBs"
-              },
-              {
-                "type": "bivariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "spearman": true,
-                  "pearson": true,
-                  "totalCount": true,
-                  "covariance": true,
-                  "kendallTau": true,
-                  "mutualInformation": true,
-                  "completeCount": true
-                },
-                "xColumn": {
-                  "name": "item_category",
-                  "type": "CATEGORICAL"
-                },
-                "yColumn": {
-                  "name": "fraudulent",
-                  "type": "CONTINUOUS"
-                },
-                "id": "OItJYYh"
-              },
-              {
-                "type": "bivariate_frequency_table",
-                "xBinningMode": "AUTO",
-                "yBinningMode": "AUTO",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthersX": true,
-                "groupWithOthersY": true,
-                "xCustomBinningBoundaries": [],
-                "yCustomBinningBoundaries": [],
-                "xColumn": {
-                  "name": "item_category",
-                  "type": "CATEGORICAL"
-                },
-                "yColumn": {
-                  "name": "fraudulent",
-                  "type": "CONTINUOUS"
-                },
-                "id": "pHCn31D"
-              }
-            ],
-            "id": "tepW1W1"
           }
         ],
         "splitBy": {
@@ -611,11 +498,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587408338727
+    "lastModifiedOn": 1587429894574
   },
   "creationTag": {
     "versionNumber": 0,
