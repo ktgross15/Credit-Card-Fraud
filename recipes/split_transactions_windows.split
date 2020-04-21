@@ -92,7 +92,7 @@
           "conditions": [
             {
               "input": "fraudulent",
-              "col": "authorized_flag",
+              "col": "transaction_id",
               "num": 0,
               "operator": "not empty string"
             }
@@ -103,10 +103,6 @@
             "columns": [
               {
                 "name": "transaction_id",
-                "type": "bigint"
-              },
-              {
-                "name": "authorized_flag",
                 "type": "bigint"
               },
               {
@@ -131,7 +127,7 @@
               },
               {
                 "name": "purchase_weekend",
-                "type": "bigint"
+                "type": "string"
               },
               {
                 "name": "purchase_hour",
@@ -139,7 +135,7 @@
               },
               {
                 "name": "merchant_category_id",
-                "type": "bigint"
+                "type": "string"
               },
               {
                 "name": "item_category",
@@ -172,10 +168,6 @@
               {
                 "name": "cardholder_fico_score",
                 "type": "double"
-              },
-              {
-                "name": "cardholder_fico_score_range",
-                "type": "string"
               },
               {
                 "name": "merchant_subsector",
