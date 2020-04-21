@@ -24,10 +24,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
-              "width": 10,
-              "height": 5
+              "top": 8,
+              "left": 0,
+              "width": 12,
+              "height": 7
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {},
@@ -49,11 +49,11 @@
   "name": "Credit Card Fraud KRG\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 26,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587484281842
+    "lastModifiedOn": 1587484296192
   },
   "creationTag": {
     "versionNumber": 0,
