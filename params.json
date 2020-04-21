@@ -160,7 +160,7 @@
       }
     }
   },
-  "name": "Credit Card Fraud KRG",
+  "name": "Credit Card Fraud KRG (testing)",
   "imgPattern": 4,
   "metrics": {
     "probes": [],
@@ -217,11 +217,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587476855719
+    "lastModifiedOn": 1587476863400
   },
   "creationTag": {
     "versionNumber": 0,
@@ -231,7 +231,7 @@
     "lastModifiedOn": 1565918605414
   },
   "description": "blah",
-  "shortDesc": "The project *Credit Card Fraud KRG* was created by Katie Gross on Aug 16th 2019",
+  "shortDesc": "The project *Credit Card Fraud KRG* was created by Katie Gross on Aug 16th 2019\nThe project *CREDIT_CARD_FRAUD_KRG_TESTING* was copied from *CREDITCARDFRAUDKRG* by Katie Gross on Apr 21st 2020",
   "tags": [
     "imported",
     "duplicated"
