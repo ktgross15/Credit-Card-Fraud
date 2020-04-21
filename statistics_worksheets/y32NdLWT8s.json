@@ -31,155 +31,6 @@
     "showConfidenceInterval": false,
     "cards": [
       {
-        "type": "univariate_header",
-        "showHistogram": true,
-        "showQuantile": true,
-        "showFrequencyTable": true,
-        "showSummary": true,
-        "showBoxPlot": true,
-        "xColumns": [
-          {
-            "name": "cardholder_age",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "item_category",
-            "type": "CATEGORICAL"
-          }
-        ],
-        "cards": [
-          {
-            "type": "column_card",
-            "column": {
-              "name": "cardholder_age",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "binningMode": "AUTO",
-                "nbBins": 25,
-                "customBinningBoundaries": [],
-                "column": {
-                  "name": "cardholder_age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "B13ucNG"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "totalCount": true,
-                  "mean": true,
-                  "sum": false,
-                  "median": true,
-                  "std": true,
-                  "variance": false,
-                  "skewness": false,
-                  "kurtosis": false,
-                  "sem": false,
-                  "completeCount": true,
-                  "nbEmpty": true,
-                  "zeroCount": false,
-                  "zeroRatio": false,
-                  "nonZeroRatio": false,
-                  "iqr": false,
-                  "distinctCount": true,
-                  "nbNonEmpty": false,
-                  "min": true,
-                  "max": true,
-                  "range": false,
-                  "mode": true
-                },
-                "column": {
-                  "name": "cardholder_age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "2QkCqry"
-              },
-              {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "column": {
-                  "name": "cardholder_age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "h1fad4R"
-              }
-            ],
-            "id": "HkFWJWO"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "item_category",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "categorical_histogram",
-                "maxValues": 10,
-                "groupOthers": false,
-                "column": {
-                  "name": "item_category",
-                  "type": "CATEGORICAL"
-                },
-                "id": "RAnAPVz"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "totalCount": true,
-                  "mean": true,
-                  "sum": false,
-                  "median": true,
-                  "std": true,
-                  "variance": false,
-                  "skewness": false,
-                  "kurtosis": false,
-                  "sem": false,
-                  "completeCount": true,
-                  "nbEmpty": true,
-                  "zeroCount": false,
-                  "zeroRatio": false,
-                  "nonZeroRatio": false,
-                  "iqr": false,
-                  "distinctCount": true,
-                  "nbNonEmpty": false,
-                  "min": true,
-                  "max": true,
-                  "range": false,
-                  "mode": true
-                },
-                "column": {
-                  "name": "item_category",
-                  "type": "CATEGORICAL"
-                },
-                "id": "Ow2ZyxY"
-              },
-              {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
-                "column": {
-                  "name": "item_category",
-                  "type": "CATEGORICAL"
-                },
-                "id": "Ci9jrJs"
-              }
-            ],
-            "id": "znjKK6x"
-          }
-        ],
-        "id": "3mJRAfr"
-      },
-      {
         "type": "bivariate_header",
         "yColumn": {
           "name": "fraudulent",
@@ -492,17 +343,177 @@
           }
         ],
         "id": "d6wluJe"
+      },
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": true,
+        "showFrequencyTable": true,
+        "showSummary": true,
+        "showBoxPlot": true,
+        "xColumns": [
+          {
+            "name": "purchase_amount",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "cardholder_reward_program",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "purchase_amount",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "purchase_amount",
+                  "type": "CONTINUOUS"
+                },
+                "id": "fw3kn2A"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "purchase_amount",
+                  "type": "CONTINUOUS"
+                },
+                "id": "1f19aKw"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "purchase_amount",
+                  "type": "CONTINUOUS"
+                },
+                "id": "f4yC5x5"
+              }
+            ],
+            "id": "IDyVddk"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "cardholder_reward_program",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "cardholder_reward_program",
+                  "type": "CATEGORICAL"
+                },
+                "id": "w2xOVbN"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "cardholder_reward_program",
+                  "type": "CATEGORICAL"
+                },
+                "id": "BiDmf9v"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "cardholder_reward_program",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Djxccsp"
+              }
+            ],
+            "id": "93brwkD"
+          }
+        ],
+        "splitBy": {
+          "groupingColumn": {
+            "name": "purchase_year",
+            "type": "CONTINUOUS"
+          },
+          "binningMode": "AUTO",
+          "maxValues": 5,
+          "groupWithOthers": true,
+          "customBinningBoundaries": [],
+          "groupWithAll": true
+        },
+        "id": "aNtIHaN"
       }
     ],
     "id": "IdpGgA6"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587429894574
+    "lastModifiedOn": 1587484214590
   },
   "creationTag": {
     "versionNumber": 0,
