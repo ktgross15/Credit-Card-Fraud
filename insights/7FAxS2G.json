@@ -1,0 +1,209 @@
+{
+  "type": "eda",
+  "params": {
+    "card": {
+      "type": "bivariate_header",
+      "yColumn": {
+        "name": "fraudulent",
+        "type": "CONTINUOUS"
+      },
+      "showMosaicPlot": true,
+      "showHistogram": true,
+      "showScatterPlot": true,
+      "showFrequencyTable": true,
+      "showBoxPlot": true,
+      "showSummary": true,
+      "xColumns": [
+        {
+          "name": "cardholder_age",
+          "type": "CONTINUOUS"
+        }
+      ],
+      "cards": [
+        {
+          "type": "column_card",
+          "column": {
+            "name": "cardholder_age",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "scatter_plot",
+              "symbolSize": 4,
+              "xColumn": {
+                "name": "cardholder_age",
+                "type": "CONTINUOUS"
+              },
+              "yColumn": {
+                "name": "fraudulent",
+                "type": "CONTINUOUS"
+              },
+              "id": "3C4uGEF"
+            },
+            {
+              "type": "bivariate_box_plot",
+              "maxValues": 5,
+              "groupOthers": true,
+              "binningMode": "AUTO",
+              "customBinningBoundaries": [],
+              "xColumn": {
+                "name": "cardholder_age",
+                "type": "CONTINUOUS"
+              },
+              "yColumn": {
+                "name": "fraudulent",
+                "type": "CONTINUOUS"
+              },
+              "id": "LUIfJB0"
+            },
+            {
+              "type": "bivariate_histogram",
+              "xBinningMode": "AUTO",
+              "yBinningMode": "AUTO",
+              "maxValuesX": 5,
+              "maxValuesY": 5,
+              "groupWithOthersX": true,
+              "groupWithOthersY": true,
+              "xCustomBinningBoundaries": [],
+              "yCustomBinningBoundaries": [],
+              "xColumn": {
+                "name": "cardholder_age",
+                "type": "CONTINUOUS"
+              },
+              "yColumn": {
+                "name": "fraudulent",
+                "type": "CONTINUOUS"
+              },
+              "id": "oywy3Oh"
+            },
+            {
+              "type": "mosaic_plot",
+              "xBinningMode": "AUTO",
+              "yBinningMode": "AUTO",
+              "maxValuesX": 5,
+              "maxValuesY": 5,
+              "groupWithOthersX": true,
+              "groupWithOthersY": true,
+              "xCustomBinningBoundaries": [],
+              "yCustomBinningBoundaries": [],
+              "xColumn": {
+                "name": "cardholder_age",
+                "type": "CONTINUOUS"
+              },
+              "yColumn": {
+                "name": "fraudulent",
+                "type": "CONTINUOUS"
+              },
+              "id": "NIh1B9m"
+            },
+            {
+              "type": "bivariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "spearman": true,
+                "pearson": true,
+                "totalCount": true,
+                "covariance": true,
+                "kendallTau": true,
+                "mutualInformation": true,
+                "completeCount": true
+              },
+              "xColumn": {
+                "name": "cardholder_age",
+                "type": "CONTINUOUS"
+              },
+              "yColumn": {
+                "name": "fraudulent",
+                "type": "CONTINUOUS"
+              },
+              "id": "QjcqAeP"
+            },
+            {
+              "type": "bivariate_frequency_table",
+              "xBinningMode": "AUTO",
+              "yBinningMode": "AUTO",
+              "maxValuesX": 5,
+              "maxValuesY": 5,
+              "groupWithOthersX": true,
+              "groupWithOthersY": true,
+              "xCustomBinningBoundaries": [],
+              "yCustomBinningBoundaries": [],
+              "xColumn": {
+                "name": "cardholder_age",
+                "type": "CONTINUOUS"
+              },
+              "yColumn": {
+                "name": "fraudulent",
+                "type": "CONTINUOUS"
+              },
+              "id": "ylrStX2"
+            }
+          ],
+          "id": "HO5adnQ"
+        }
+      ],
+      "splitBy": {
+        "groupingColumn": {
+          "name": "purchase_year",
+          "type": "CONTINUOUS"
+        },
+        "binningMode": "AUTO",
+        "maxValues": 5,
+        "groupWithOthers": true,
+        "customBinningBoundaries": [],
+        "groupWithAll": true
+      },
+      "id": "ddcN2Y3"
+    },
+    "dataSpec": {
+      "inputDatasetSmartName": "transactions_windows",
+      "datasetSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": true,
+      "refreshTrigger": 0,
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      }
+    }
+  },
+  "owner": "ktgross15",
+  "listed": true,
+  "name": "Bivariate analysis on 1 variable ",
+  "dashboardCreationId": "XYRqSdY",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1587484280003
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1587484280003
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

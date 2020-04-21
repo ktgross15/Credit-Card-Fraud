@@ -20,6 +20,23 @@
             "insightType": "eda",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 10,
+              "height": 5
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {},
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "7FAxS2G",
+            "insightType": "eda",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -32,11 +49,11 @@
   "name": "Credit Card Fraud KRG\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587407126615
+    "lastModifiedOn": 1587484280012
   },
   "creationTag": {
     "versionNumber": 0,
