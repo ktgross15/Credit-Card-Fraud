@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587407898172
+    "lastModifiedOn": 1587429958197
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,7 @@
       },
       {
         "name": "fraudulent",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "purchase_date",
