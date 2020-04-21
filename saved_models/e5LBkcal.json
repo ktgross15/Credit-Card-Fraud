@@ -62,7 +62,14 @@
       "partition": "NP",
       "columns": [],
       "metrics": [
-        "reporting:BUILD_DURATION"
+        "reporting:BUILD_DURATION",
+        "model_perf:AUC",
+        "model_perf:F1",
+        "model_perf:LOGLOSS",
+        "model_perf:RECALL",
+        "model_perf:PRECISION",
+        "model_perf:LIFT",
+        "model_perf:ACCURACY"
       ]
     }
   },
@@ -1088,11 +1095,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1587482557239
+    "lastModifiedOn": 1587482707531
   },
   "creationTag": {
     "versionNumber": 0,
